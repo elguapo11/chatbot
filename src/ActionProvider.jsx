@@ -14,9 +14,9 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
     const botMessage = createChatBotMessage('Catch ya later');
 
     setState((prev) => ({
-      ...prev,
-      messages: [...prev.messages, botMessage],
+      ...prev, messages: [...prev.messages, botMessage],
     }));
+
   };
 
   // Put the handleHello function in the actions object to pass to the MessageParser
@@ -33,5 +33,6 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
     </div>
   );
 };
+
 
 export default ActionProvider;
