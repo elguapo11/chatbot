@@ -5,6 +5,19 @@ const botName = 'Your personal assistant';
 
 const config = {
   initialMessages: [createChatBotMessage(`Hi! I'm ${botName}`)],
+  customComponents: {
+    header: () => (
+      <div
+        style={{
+          backgroundColor: '#376B7E',
+          padding: '10px',
+          borderRadius: '3px',
+        }}
+      >
+        Welcome to my custom Chatbot
+      </div>
+    ),
+  },
   botName: botName,
   customStyles: {
     botMessageBox: {
